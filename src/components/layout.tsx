@@ -12,15 +12,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  if (process.env.NODE_ENV === "test") {
-    return (
-      <>
-        <TopMenu />
-        {children}
-      </>
-    );
-  }
-
   return (
     <html lang="en">
       <body>
